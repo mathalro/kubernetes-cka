@@ -1,0 +1,9 @@
+k run nginx-pod --image=nginx:alpine -> declarative way to deploy a pod
+k run redis --image=redis:alpine --labels="tier=db" -> declarative way to deploy a pod with labels
+k expose pod redis --port=6379 --name redis-services -> create a service to expose redis in the port 6379
+k create deploy webapp --image=kodekloud/webapp-color --replicas=3 -> create a deployment with image kodekloud and 3 replicas
+k run --image=nginx custom-nginx --port=8080 -> create a pod exposing it in a custom port
+k create namespace dev-ns -> create a new namespace
+k create deployment redis-deploy --image-redis --replicas=2 -n dev-ns -> create a deployment in new namespace
+
+
