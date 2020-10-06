@@ -1,0 +1,3 @@
+k get services - list all services in kubernetes cluster.
+k describe services [service-name] - show the service details.
+k create -f service.yaml - create the service in the cluster using a yaml file definition. 
