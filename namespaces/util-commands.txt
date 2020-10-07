@@ -1,0 +1,4 @@
+k get namespaces -> list all cluster namespaces
+k get pods -n test -> list all pods in the test namespace
+k run redis --image=redis -n finance -> create a pod in the finance namespace
+k get pods --all-namespaces -> get pods for all namespaces

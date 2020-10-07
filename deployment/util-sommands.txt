@@ -1,0 +1,2 @@
+k get deploy -> list all deployments in default namespace
+k create deploy httpd-frontend --image=httpd:2.4-alpine --replicas=3 -> create a new deploy setting image and replicas by imperative command.
