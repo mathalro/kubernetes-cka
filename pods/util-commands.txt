@@ -1,0 +1,7 @@
+k get pods -> list all the pods in default namespace
+k run ngixn --image=nginx -> create a pod with nginx name and nginx image
+k describe pod newpods-26vs6 | grep Image -> detail a pod and get its image
+k get pods -o wide -> get information about node
+k delete pod webapp -> delete a pod
+k create -f pod.yaml -> craete a pod using yaml definition
+k edit pod redis -> edit the pod yaml definition
