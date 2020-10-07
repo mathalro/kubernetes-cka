@@ -1,0 +1,4 @@
+k get replicasets -> list all replicasets in default cluster
+k delete replicaset replicaset-1 -> delete a replicaset. 
+k edit replicaset replicaset-1 -> edit replicaset yaml definition. After edit replicaset definition it is necessary to delete all pods for change to work. 
+k scale replicaset new-replica-set --replicas=5 -> Scale a replicaset to have 5 pods.
