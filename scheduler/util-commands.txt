@@ -2,3 +2,4 @@ k get pods --selector app=App1 -> filter the pods with label app=App1
 k get pods --selector "app=App1,tier=tier2" -> filter the pods with more than one label
 k taint nodes node-name key=value:taint-effect -> Set a taint to a node   
 k taint nodes node-name key -> Remove a taint with key 'key' from a node
+k label nodes node-name label-key=label-value -> Label a node

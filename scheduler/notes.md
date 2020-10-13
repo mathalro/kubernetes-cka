@@ -27,3 +27,29 @@ The taint-effect defines what happens to pods that not tolerate the taint. The o
 Taints and Tolerations does not tell the pod to go to an specific node. They only avoid the pod to be scehdule in some node. 
 
 By default, the kubernetes sets a taint to the master node, that prevents any pods to be schedule to that node.
+
+## Node Selectors
+
+Limit a pod to run on a specific Node. 
+
+## Node afinity
+
+Provide advanced capabilities to limit pod placement on specific nodes. The node afinity is defined by key, value and operator. 
+
+* Operator Equal - the afinity node label should be the same as specified in key value afinity
+* Operator In - the node label can has the value of any of the specified in values afinity.
+* Operator Exists - the afinity key should only exists on the node.
+
+### Node afinity types
+
+|        | DuringSchedule | DuringExecution |
+|--------|----------------|-----------------|
+| Type 1 | required       | Ignored         |
+| Type 2 | Prefered       | Ignored         |
+| Type 2 | Required       | Required        |
+
+<br>
+
+* Type 1 - The placement of the pod is crucial.
+* Type 2 - The running of the pod is more important than its placement.
+* Type 3 -The running pod pod is evicted or terminated if the node changes to a non afinity label. 
