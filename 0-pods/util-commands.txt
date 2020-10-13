@@ -5,3 +5,4 @@ k get pods -o wide -> get information about node
 k delete pod webapp -> delete a pod
 k create -f pod.yaml -> craete a pod using yaml definition
 k edit pod redis -> edit the pod yaml definition
+k explain pods --recursive -> documentation about pods
