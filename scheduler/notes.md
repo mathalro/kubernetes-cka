@@ -73,3 +73,7 @@ Tip: The status 'OOMKilled' indicates that the pod ran out of memory. Identify t
 More details about kubernetes CPU limits can be found [here](https://medium.com/omio-engineering/cpu-limits-and-aggressive-throttling-in-kubernetes-c5b20bd8a718#:~:text=Kubernetes%20uses%20kernel%20throttling%20to,and%20it's%20easier%20to%20detect). 
 
 # Daemon Sets
+
+Daemon sets are like replica sets, but it runs one copy of a POD on each node of the cluster. The Daemon Set yaml definition is exactly the same of Replica Set definition, except for the Kind, that is Daemon Set. 
+
+The Daemon Set uses Node Afinity to guarantee that every node will have a POD instance. 
