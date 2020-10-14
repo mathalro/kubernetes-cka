@@ -53,3 +53,23 @@ Provide advanced capabilities to limit pod placement on specific nodes. The node
 * Type 1 - The placement of the pod is crucial.
 * Type 2 - The running of the pod is more important than its placement.
 * Type 3 -The running pod pod is evicted or terminated if the node changes to a non afinity label. 
+
+## Resource Requirement and Limits
+
+Each node has a set of CPU, Memory and Disk resources available. The scheduler takes into consideration the amount of resources required by a pod and those available on the nodes. The default value for a POD is 0.5 CPU, 256 Mi. 
+
+The resource required is the minimum amount of memory and CPU requested by the container when the scheduler tries to place the pod on that node.
+
+0.5 CPU = 500m where m is mili. The minimum size is 1m. 1 count of CPU or 1000m is equivalente to 1 vCPU (AWS), 1 Core (GCP or Azure), 1 Hyperthread. 
+
+For memory, Mi where Mi is Mebibyte, or G for Gibebyte. 1 Ki (Kibebyte) = 1024 bytes. 
+
+Curiosity about the estabilishement of [Kibebyte](https://en.wikipedia.org/wiki/Kibibyte).
+
+For the limit, kubernetes set 1vCPU and 512 Mi by default. A container cannot use more CPU than its limits. It does not happen with memory, the container can use more memory resources than its limit. If a POD tries to consume more memory than its limit constantly, the POD will be terminated. 
+
+Tip: The status 'OOMKilled' indicates that the pod ran out of memory. Identify the memory limit set on the POD.
+
+More details about kubernetes CPU limits can be found [here](https://medium.com/omio-engineering/cpu-limits-and-aggressive-throttling-in-kubernetes-c5b20bd8a718#:~:text=Kubernetes%20uses%20kernel%20throttling%20to,and%20it's%20easier%20to%20detect). 
+
+# Daemon Sets
