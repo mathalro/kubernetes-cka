@@ -77,3 +77,11 @@ More details about kubernetes CPU limits can be found [here](https://medium.com/
 Daemon sets are like replica sets, but it runs one copy of a POD on each node of the cluster. The Daemon Set yaml definition is exactly the same of Replica Set definition, except for the Kind, that is Daemon Set. 
 
 The Daemon Set uses Node Afinity to guarantee that every node will have a POD instance. 
+
+# Static PODs
+
+The kubelet can be configured to check a directory for files with pods definition files. So it is not necessary to have a Kubernetes API to deploy a new POD on the host. These PODS are noum as static PODs. That is possible because the kubelet works at a POD level.
+
+Since static pods are not dependent on the kubernetes control plane, it is possible to use static pods to deploy the control plane components.
+
+Both, Static pods and DaemonSet pods are ignored by the kube scheduler. 
