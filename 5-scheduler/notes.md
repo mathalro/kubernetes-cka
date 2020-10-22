@@ -85,3 +85,9 @@ The kubelet can be configured to check a directory for files with pods definitio
 Since static pods are not dependent on the kubernetes control plane, it is possible to use static pods to deploy the control plane components.
 
 Both, Static pods and DaemonSet pods are ignored by the kube scheduler. 
+
+The static PODs are defined by manifests stored at /etc/kubernetes/manifests folder. 
+
+# Multiple Schedulers
+
+It is possible to choose an personalized scheduler with an specific algorithm to choose the node to deploy a POD.
