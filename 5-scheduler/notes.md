@@ -1,6 +1,6 @@
 # Scheduler
 
-Every POD has a field nodename tha is not set by default. Kubernetes set it automatically. The scheduler goes through all the pods and look for those that do not have this property set. Then, the scheduler identifies the right node to the POD using the scheduling algorithm and set the nodename field. 
+Every POD has a field nodename that is not set by default. Kubernetes set it automatically. The scheduler goes through all the pods and look for those that do not have this property set. Then, the scheduler identifies the right node to the POD using the scheduling algorithm and set the nodename field. 
 
 If there is no scheduler, the pods continue to be in Pending state. 
 
