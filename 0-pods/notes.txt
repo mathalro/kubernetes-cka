@@ -1,3 +1,5 @@
 ## POD
 
 Pod is the smallest deployment unit in kubernetes. A Pod can have one or more containers, a main container, the application and in some cases, helper containers.
+
+The container can have a ENTRYPOINT (command) and a CMD (args) to initialize its execution.
