@@ -1,3 +1,3 @@
 # Checklist for CKAD Cerficiation
 
-- [] Kubernetes API Primitives
+- [x] Kubernetes API Primitives
