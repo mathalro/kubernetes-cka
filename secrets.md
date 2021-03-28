@@ -13,6 +13,7 @@ k create secret generic \
 
 ```yaml
 apiVersion: v1
+kind: Secret
 metadata:
   name: generic
 data:
@@ -23,4 +24,20 @@ data:
 
 ```sh
 echo -n 'value-to-encode' | base64 --encode 
+```
+
+## Referencing secret in a POD
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod
+spec:
+  containers:
+  - envFrom:
+      - secretRef:
+          name: app-secret
+    name: pod-example
+    image: pod-example-image
 ```
