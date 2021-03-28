@@ -12,9 +12,9 @@
 - ✅ Monitor Applications
 - ✅ Debugging
 - ✅ Services
+- ✅ Service Accounts
 - 🔲 Annotations
 - 🔲 Network Policies
-- 🔲 Service Accounts
 - 🔲 Liveness Probes and Readness Probes
 - 🔲 Persistent Volume Claims for Storage
 - 🔲 Jobs and CronJobs
