@@ -13,10 +13,10 @@
 - ✅ Debugging
 - ✅ Services
 - ✅ Service Accounts
+- ✅ Multi-Container POD design patterns
 - 🔲 Annotations
 - 🔲 Network Policies
 - 🔲 Liveness Probes and Readness Probes
 - 🔲 Persistent Volume Claims for Storage
 - 🔲 Jobs and CronJobs
 - 🔲 Deployments and Rolling Updates
-- 🔲 Multi-Container POD design patterns
