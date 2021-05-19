@@ -14,9 +14,9 @@
 - ✅ Services
 - ✅ Service Accounts
 - ✅ Multi-Container POD design patterns
-- 🔲 Annotations
+- ✅ Annotations
 - 🔲 Network Policies
-- 🔲 Liveness Probes and Readness Probes
+- ✅ Liveness Probes and Readness Probes
 - 🔲 Persistent Volume Claims for Storage
 - 🔲 Jobs and CronJobs
-- 🔲 Deployments and Rolling Updates
+- ✅ Deployments and Rolling Updates
