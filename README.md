@@ -18,5 +18,5 @@
 - 🔲 Network Policies
 - ✅ Liveness Probes and Readness Probes
 - 🔲 Persistent Volume Claims for Storage
-- 🔲 Jobs and CronJobs
+- ✅ Jobs and CronJobs
 - ✅ Deployments and Rolling Updates
